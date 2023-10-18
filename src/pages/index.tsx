@@ -52,6 +52,11 @@ export default function Home() {
     }
   }, [selectedCategory, images]);
 
+  const imagesWithDates = filteredImages.map((imageUrl) => {
+    const imageInfo = data.find((item) => item.url === imageUrl);
+    return imageInfo ? { url: imageUrl, date: imageInfo.date } : null;
+  });
+
   const handleChangeCategory = (event: SelectChangeEvent<string>) => {
     setSelectedCategory(event.target.value);
   };
@@ -80,15 +85,26 @@ export default function Home() {
             <MenuItem value="Desert">Desert</MenuItem>
           </Select>
         </FormControl>
-        {/* <Button variant="contained">Contained</Button> */}
+        <div className={styles.btnWrapper}>
+          <span> Sort by: </span>
+
+          <Button className={styles.btn} variant="contained">
+            Date added
+          </Button>
+        </div>
+
         <div className={styles.imgWrapper}>
-          {filteredImages.map((imageUrl, index) => (
-            <img
-              className={styles.img}
-              key={index}
-              src={imageUrl}
-              alt={`Image ${index + 1}`}
-            />
+          {imagesWithDates.map((item, index) => (
+            <div key={index} className={styles.imgContainer}>
+              <img
+                className={styles.img}
+                src={item?.url}
+                alt={`Image ${index + 1}`}
+              />
+              {item && item.date ? (
+                <span className={styles.imgDate}>{item.date}</span>
+              ) : null}
+            </div>
           ))}
         </div>
       </main>
