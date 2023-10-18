@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://ik.imagekit.io/6lz5hnqqv/1.jpg",
+    "category": "Mountains",
+    "date": "2021-01-01"
+  },
+  {
+    "url": "https://ik.imagekit.io/6lz5hnqqv/2.jpg",
+    "category": "Mountains",
+    "date": "2022-01-01"
+  },
+  {
+    "url": "https://ik.imagekit.io/6lz5hnqqv/3.jpg",
+    "category": "Mountains",
+    "date": "2023-01-01"
+  },
+  {
+    "url": "https://ik.imagekit.io/6lz5hnqqv/4.jpg",
+    "category": "Mountains",
+    "date": "2023-04-01"
+  },
+  {
+    "url": "https://ik.imagekit.io/6lz5hnqqv/11.jpg",
+    "category": "Sea",
+    "date": "2023-08-01"
+  },
+  {
+    "url": "https://ik.imagekit.io/6lz5hnqqv/9.jpg",
+    "category": "Sea",
+    "date": "2021-05-01"
+  },
+  {
+    "url": "https://ik.imagekit.io/6lz5hnqqv/12.jpg",
+    "category": "Sea",
+    "date": "2020-02-01"
+  },
+  {
+    "url": "https://ik.imagekit.io/6lz5hnqqv/10.jpg",
+    "category": "Sea",
+    "date": "2021-01-10"
+  }
+]
