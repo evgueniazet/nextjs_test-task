@@ -7,11 +7,12 @@ import { createApi } from "unsplash-js";
 import CircularProgress from "@mui/material/CircularProgress";
 import { TPhoto } from "@/types/TPhoto";
 import Header from "@/components/Header/Header";
+import { accessKey } from "../../../config";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const api = createApi({
-  accessKey: "EhjvvcJgvqyWAcLKATC7VL5yXnP8lG_1gaaRfp5PNX8",
+  accessKey: accessKey,
 });
 
 export default function Favorites() {
