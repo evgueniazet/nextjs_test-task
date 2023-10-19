@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .container {
     height: 100vh;
     display: flex;
@@ -27,12 +29,12 @@
 
 .btn {
     background-color: transparent;
-    color: #2e2d2d;
+    color: $graySecondary;
     margin-left: 10px;
     transition: background-color .3s ease;
 
     &:hover {
-        background-color: #5d885d;
+        background-color: $green;
         transition: background-color .3s ease;
     }
 }
@@ -79,7 +81,7 @@
 }
 
 .spinner {
-    color: gray;
+    color: $gray;
 
     &Wrapper {
         display: flex;
@@ -105,16 +107,16 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    fill: #fff;
-    stroke: #2e2d2d;
+    fill: $white;
+    stroke: $graySecondary;
 }
 
 .imgLikeActive {
     position: absolute;
     top: 20px;
     right: 20px;
-    fill: yellow;
-    stroke: yellow;
+    fill: $yellow;
+    stroke: $yellow;
 }
 
 .info {
@@ -125,7 +127,7 @@
 .infoText {
     display: block;
     font-size: 14px;
-    color: gray;
+    color: $gray;
 }
 
 .pagination {

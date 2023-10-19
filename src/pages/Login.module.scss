@@ -1,4 +1,7 @@
+@import '../styles/variables.scss';
+
 .login {
+
     padding: 60px;
     display: flex;
     justify-content: center;
@@ -16,7 +19,7 @@
     &Title {
         text-align: center;
         font-size: 40px;
-        color: #433f3f;
+        color: $grayPrimary;
     }
 }
 
@@ -40,11 +43,11 @@
 .button {
     margin-top: 20px;
     width: 200px;
-    background-color: #207720;
+    background-color: $greenSecondary;
     transition: background-color .3s ease;
 
     &:hover {
-        background-color: #094509;
+        background-color: $greenDark;
         transition: background-color .3s ease;
     }
 }
@@ -62,6 +65,6 @@
 }
 
 .error {
-    color: red;
+    color: $red;
     margin-top: 10px;
 }

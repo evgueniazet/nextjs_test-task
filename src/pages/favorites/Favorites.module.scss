@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .container {
     height: 100vh;
     display: flex;
@@ -7,48 +9,6 @@
     height: 100%;
     flex: 1;
     padding: 20px 50px;
-}
-
-.filters {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.form {
-    width: 200px;
-    margin-top: 10px;
-}
-
-.btn {
-    background-color: transparent;
-    color: #2e2d2d;
-    margin-left: 10px;
-    transition: background-color .3s ease;
-
-    &:hover {
-        background-color: #5d885d;
-        transition: background-color .3s ease;
-    }
-}
-
-.select {
-    &Wrapper {
-        &:not(:first-child) {
-            margin-left: 15px;
-        }
-    }
-
-    &Title {
-        display: flex;
-        font-size: 14px;
-
-    }
-
-}
-
-.sorters {
-    display: flex;
 }
 
 .gallery {
@@ -74,7 +34,7 @@
 }
 
 .spinner {
-    color: gray;
+    color: $gray;
 
     &Wrapper {
         display: flex;
@@ -96,21 +56,6 @@
     margin-bottom: 30px;
 }
 
-.imgLike {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    fill: #fff;
-    stroke: #2e2d2d;
-}
-
-.imgLikeActive {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    fill: yellow;
-    stroke: yellow;
-}
 
 .info {
     display: flex;
@@ -120,11 +65,5 @@
 .infoText {
     display: block;
     font-size: 14px;
-    color: gray;
-}
-
-.pagination {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    color: $gray;
 }
