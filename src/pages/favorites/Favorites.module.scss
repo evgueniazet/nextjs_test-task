@@ -1,6 +1,130 @@
-.Wrapper {
-    flex: 1;
-    width: 100%;
+.container {
     height: 100vh;
-    background-color: red;
+    display: flex;
+}
+
+.main {
+    height: 100%;
+    flex: 1;
+    padding: 20px 50px;
+}
+
+.filters {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: transparent;
+    color: #2e2d2d;
+    margin-left: 10px;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: #5d885d;
+        transition: background-color .3s ease;
+    }
+}
+
+.select {
+    &Wrapper {
+        &:not(:first-child) {
+            margin-left: 15px;
+        }
+    }
+
+    &Title {
+        display: flex;
+        font-size: 14px;
+
+    }
+
+}
+
+.sorters {
+    display: flex;
+}
+
+.gallery {
+    position: relative;
+    flex: 1;
+    height: calc(100vh - 266px);
+    overflow: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.spinnerContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    color: gray;
+
+    &Wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.img {
+    width: 100%;
+    max-height: 200px;
+}
+
+.imgContainer {
+    position: relative;
+    width: calc(100% / 3 - 20px);
+    max-height: 200px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.imgLike {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #fff;
+    stroke: #2e2d2d;
+}
+
+.imgLikeActive {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: yellow;
+    stroke: yellow;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoText {
+    display: block;
+    font-size: 14px;
+    color: gray;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
